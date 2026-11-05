@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="BP">
+    <form>
+    
+    <header>
+        <div id="head">
+            <h1>RESUME FORM</h1>
+        </div>
+    </header>
+        <div class="FC">
+            <h2>Personal Details :</h2>
+            
+                <label for="fname"><h3>First Name</h3></label>
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name"><br>
+                <label for="lname" ><h3>Last Name</h3></label>
+                <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"><br>
+                <label for="dob" ><h3>Date Of Birth</h3></label>
+                <input type="date" name="dob" id="dob" placeholder="Enter Your DOB"><br>
+            
+        </div>
+
+        <div class="FC">
+            
+            <h2>Contact Information: </h2>
+            <label for="email"><h3>Email Adress</h3></label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Adress"><br>
+            <label for="number"><h3>Phone Number</h3></label>
+            <input type="tel" name="number" id="number" placeholder="Enter Your Phone Number"><br>
+            <label for="resarea"><h3>Residential Area</h3></label>
+            <textarea id="resarea" name="resarea" placeholder="Enter your adress"></textarea>
+            
+        </div>
+
+        <div class="FC">
+            
+            <label for="prosum"><h2>Profile Summary</h2></label>
+            <textarea id="prosum" name="prosum"></textarea>
+           
+        </div>
+
+        <div class="FC">
+            
+            <h2>Edducation :</h2>
+            <h3>Course</h3>
+           <input type="radio" id="B.Tech" name="course" value="B.Tech">
+           <label for="B.Tech">B.Tech;</label>
+           <input type="radio" id="BSC" name="course" value="BSC">
+           <label for="BSC">BSC;</label>
+            <input type="radio" id="BCA" name="course" value="BCA">
+           <label for="BCA">BCA;</label>
+            <input type="radio" id="BA" name="course" value="BA">
+           <label for="BA">BA;</label>
+           <input type="radio" id="BCOM" name="course" value="BCOM">
+           <label for="BCOM">BCOM;</label>
+
+           <h3>Current Year</h3>
+            <input type="radio" id="1st" name="Year" value="1">
+           <label for="1st">1st;</label>
+           <input type="radio" id="2nd" name="Year" value="2">
+           <label for="2nd">2nd;</label>
+           <input type="radio" id="3rd" name="Year" value="3">
+           <label for="3rd">3rd;</label>
+           <input type="radio" id="4th" name="Year" value="4">
+           <label for="4th">4th;</label>
+           <input type="radio" id="5th" name="Year" value="5">
+           <label for="5th">5th;</label>
+
+           <label for="Iname"><h3>Institution Name</h3></label>
+           <input type="text" id="Iname" name="Iname" placeholder="Enter Institution Name">
+
+           <label for="YP"><h3>Passout Year</h3></label>
+           <input type="text" id="YP" name="YP" placeholder="Enter Passout Year">
+          
+
+        
+        </div>
+        
+        <div class="FC">
+            
+                <h2>Skills :</h2>
+                <label><input type="checkbox" name="skills" value="c/cpp">C or C++</label><br>
+                <label><input type="checkbox" name="skills" value="python"> Python</label><br>
+                <label><input type="checkbox" name="skills" value="dsa"> Data Structures & Algorithms</label><br>
+                <label><input type="checkbox" name="skills" value="html-css"> HTML5 / CSS3</label><br>
+                <label><input type="checkbox" name="skills" value="git"> Git & GitHub</label><br>
+                <label><input type="checkbox" name="skills" value="oop"> Object-Oriented Programming</label><br>
+            
+        </div>
+
+        <div class="FC">
+            
+                <label for="Pro"><h2>Projects :</h2></label>
+                <textarea id="Pro" name="Project" placeholder="Enter Information About Your Projects"></textarea>
+            
+        </div>
+
+        <div id="button" style="background: transparent; box-shadow: none;">
+        <button type="button" id="generateBtn" onclick="generateResume()">Generate Resume</button>
+        <button type="reset" id="resetBtn" onclick="resetResume()">Reset / Clear</button>
+        </div>
+
+    
+    </form>
+    <script src="first.js"></script>
+
+    <div id="Displayform"></div>
+</body>
+</html>
