@@ -74,3 +74,43 @@ function generateResume() {
 function resetResume() {
     document.getElementById("Displayform").innerHTML = "";
 }
+
+function toggleTheme(){
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+    let themeToggleBtn = document.getElementById("DT");
+    if (body.classList.contains("dark-mode")) {
+        DT.innerHTML = "☀️ Light Mode";
+
+        localStorage.setItem("theme" , "Dark");
+    } 
+    else {
+        DT.innerHTML = "🌙 Dark Mode";
+
+        localStorage.setItem("theme" , "Light");
+    }
+
+
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    let body = document.getElementById("BP");
+    let button = document.getElementById("DT");
+
+    let savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+
+        body.classList.add("dark-mode");
+        button.innerHTML = "☀️ Light Mode";
+
+    }
+    else {
+
+        body.classList.remove("dark-mode");
+        button.innerHTML = "🌙 Dark Mode";
+
+    }
+
+});
