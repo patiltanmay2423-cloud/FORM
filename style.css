@@ -158,7 +158,8 @@ textarea:hover {
         margin-right: auto;
         padding: auto;
         display: block;
-        margin-top: 205%;
+        margin-bottom: auto;
+        margin-top: auto;
     }
 }
 
